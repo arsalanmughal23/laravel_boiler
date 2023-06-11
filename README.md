@@ -16,3 +16,8 @@
         1.3 cmd >> git commit -m "initial commit"
         1.4 cmd >> git remote add origin https://github.com/arsalanmughal23/laravel_boiler.git
         1.5 cmd >> git push -u origin master
+
+## Guest Api
+    1. make route in routes/api.php 
+    2. make sure you make route outside the middleware/auth group
+    3. Note: i already created an example of guest api in routes/api.php with name of "guest-example"
