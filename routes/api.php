@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,9 @@ Route::get('/guest-example', function(){
     ];
     return response()->json($response);
 });
+
+
+Route::post('/register', [Api\AuthController::class, 'register']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
